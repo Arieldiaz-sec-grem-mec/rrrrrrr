@@ -1,0 +1,44 @@
+.clases-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clases-container h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.clases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.clase-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clase-card:hover {
+  transform: translateY(-5px);
+}
+
+.clase-card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.clase-materia {
+  color: #666;
+  margin: 5px 0;
+}
+
+.clase-seccion {
+  color: #90A959;
+  font-weight: 500;
+}

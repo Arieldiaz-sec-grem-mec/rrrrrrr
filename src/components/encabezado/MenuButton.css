@@ -1,0 +1,96 @@
+.menu-container {
+  position: relative;
+  display: inline-block;
+  z-index: 9999; /* Aseguramos que el contenedor esté por encima de todo */
+}
+
+.menu-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #333;
+  position: relative;
+  z-index: 9999;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 220px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+/* Regla modificada para mantener el menú visible */
+.menu-container:hover .menu-dropdown,
+.menu-dropdown:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Aseguramos que el menú esté por encima de otros elementos */
+.menu-dropdown nav {
+  position: relative;
+  z-index: 9999;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.menu-item:hover {
+  background: #f5f5f5;
+  padding-left: 20px;
+}
+
+.menu-item svg {
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.menu-item:hover svg {
+  color: #333;
+}
+
+.menu-item.logout {
+  color: #dc3545;
+  border-top: 1px solid #eee;
+}
+
+.menu-item.logout svg {
+  color: #dc3545;
+}
+
+.menu-item.logout:hover {
+  background: #ffebee;
+}
+

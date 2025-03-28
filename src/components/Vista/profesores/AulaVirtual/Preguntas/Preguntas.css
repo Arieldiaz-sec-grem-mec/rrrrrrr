@@ -1,0 +1,85 @@
+.preguntas-container {
+    padding: 20px;
+  }
+  
+  .agregar-pregunta-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .lista-preguntas {
+    margin-top: 20px;
+  }
+  
+  .pregunta-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .opciones-lista {
+    margin-top: 10px;
+  }
+  
+  .opcion {
+    padding: 5px;
+    margin: 3px 0;
+  }
+  
+  .opcion.correcta {
+    background-color: #d4edda;
+    border-radius: 4px;
+  }
+  
+  .badge {
+    margin-left: 10px;
+  }
+  
+  /* Estilos para preguntas en acordeón */
+  .preguntas-accordion {
+    margin-top: 15px;
+    padding: 0 10px;
+    border-left: 3px solid #90A959;
+  }
+  
+  .pregunta-accordion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .pregunta-header {
+    flex: 1;
+  }
+  
+  .pregunta-numero {
+    font-weight: 600;
+    color: #495057;
+    margin-right: 10px;
+  }
+  
+  .pregunta-texto {
+    margin: 0;
+    color: #212529;
+  }
+  
+  .pregunta-actions {
+    display: flex;
+    gap: 5px;
+  }

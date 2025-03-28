@@ -1,0 +1,172 @@
+.clases-por-curso {
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.clases-por-curso h2 {
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.clases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.clase-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.clase-card:hover {
+  transform: translateY(-4px);
+}
+
+.clase-card h3 {
+  margin: 0 0 12px 0;
+  color: #2c3e50;
+}
+
+.clase-descripcion {
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.clase-fecha {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 16px;
+}
+
+.clases-lista {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.clase-accordion {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clase-header {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.clase-header:hover {
+  background-color: #edf2f7;
+}
+
+.clase-header.active {
+  background-color: #4299e1;
+  color: white;
+  border-color: #4299e1;
+}
+
+.clase-contenido {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-top: none;
+}
+
+.clase-descripcion {
+  margin-bottom: 15px;
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.clase-fecha {
+  color: #718096;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.recurso-link {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.expandir-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.clase-contenido {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-top: none;
+}
+
+.clase-descripcion {
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+.clase-recursos {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.recurso-link {
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.recurso-link:hover {
+  opacity: 0.9;
+}
+
+.recurso-link.pdf {
+  background-color: #dc3545;
+}
+
+.recurso-link.video {
+  background-color: #28a745;
+}
+
+.recurso-link:hover {
+  opacity: 0.9;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}

@@ -1,0 +1,206 @@
+.herramienta-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.herramienta-card:hover {
+  transform: translateY(-5px);
+}
+
+.herramienta-header {
+  margin-bottom: 15px;
+}
+
+.herramienta-header h3 {
+  color: #333;
+  margin: 0;
+}
+
+.herramienta-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.herramienta-btn {
+  padding: 10px 20px;
+  background: #90A959;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.herramienta-btn:hover:not(:disabled) {
+  background: #7a9149;
+  transform: translateY(-1px);
+}
+
+.herramienta-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.herramienta-btn.send-btn {
+  background: #4CAF50;
+  color: white;
+  font-weight: 500;
+}
+
+.herramienta-btn.send-btn:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.herramienta-btn.send-btn:disabled {
+  background: #a5d6a7;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.herramienta-btn.cancel-btn {
+  background: #f44336;
+}
+
+.herramienta-btn.cancel-btn:hover {
+  background: #e53935;
+}
+
+.estudiantes-tabla input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.add-btn:disabled {
+  background-color: #90A959;
+  cursor: default;
+}
+
+.add-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.confirm-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: #90A959;
+  color: white;
+}
+
+.confirm-btn.confirmed {
+  background-color: #4CAF50;
+  cursor: default;
+}
+
+.confirm-btn:hover:not(.confirmed) {
+  background-color: #7a9149;
+}
+
+.estudiantes-tabla-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.estudiantes-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.estudiantes-tabla th,
+.estudiantes-tabla td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.estudiantes-tabla th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.estudiantes-tabla tr:hover {
+  background-color: #f8f8f8;
+}

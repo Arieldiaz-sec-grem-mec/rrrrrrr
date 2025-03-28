@@ -1,0 +1,90 @@
+.users-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.user-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.user-info h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.user-email {
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.user-role {
+  color: #90A959;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.edit-btn, .save-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.save-btn {
+  background: #90A959;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #e0e0e0;
+}
+
+.save-btn:hover {
+  background: #7a9149;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input,
+.edit-form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+.error {
+  color: #dc3545;
+}
